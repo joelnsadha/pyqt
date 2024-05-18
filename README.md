@@ -12,8 +12,8 @@ This is a simple PyQt5 application that displays random words from a predefined 
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/joelnsadha/pyqt.git
+   cd pyqt
    ```
 
 2. **Create a virtual environment (optional but recommended):**
