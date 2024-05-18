@@ -1,4 +1,5 @@
 # ----------Import modules------------#
+from random import choice
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (
     QApplication,
@@ -37,6 +38,22 @@ my_words = [
     "here",
 ]
 
+
+def pick_word():
+    random_word = choice(my_words)
+    text1.setText(random_word)
+
+
+def pick_word2():
+    random_word = choice(my_words)
+    text2.setText(random_word)
+
+
+def pick_word3():
+    random_word = choice(my_words)
+    text3.setText(random_word)
+
+
 # -------------All designs-------------#
 # Create Layouts
 master_layout = QVBoxLayout()
@@ -65,6 +82,9 @@ master_layout.addLayout(row3)
 
 main_window.setLayout(master_layout)
 # Events
+button1.clicked.connect(pick_word)
+button2.clicked.connect(pick_word2)
+button3.clicked.connect(pick_word3)
 
 
 # Show/Run app
