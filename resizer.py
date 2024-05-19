@@ -8,13 +8,6 @@ from PyQt5.QtWidgets import (
     QPushButton,
     QVBoxLayout,
     QHBoxLayout,
+    QListWidget,
+    QComboBox,
 )
-
-app = QApplication([])
-main_window = QWidget()
-main_window.setWindowTitle("Photo Editor")
-main_window.resize(900, 700)
-
-
-main_window.show()
-app.exec_()
